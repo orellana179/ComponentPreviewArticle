@@ -1,0 +1,97 @@
+:root{
+    --very-dark-grayish-blue:hsl(217, 19%, 35%);
+    --desaturated-dark-blue:hsl(214, 17%, 51%);
+    --grayish-blue:hsl(212, 23%, 69%);
+    --light-grayish-blue:hsl(210, 46%, 95%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Manrope', sans-serif;
+    font-size: 62.5%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--light-grayish-blue);
+}
+main{
+    background-color: var(--light-grayish-blue);
+}
+article{
+    display: flex;
+    flex-direction: column;
+    margin: 90px 25px 25px 25px;
+    background-color: white;
+    border-radius: 10px;
+    max-width: 450px;
+}
+article img{
+    width: 100%;
+    height: 220px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+article .details{
+    margin: 35px 25px 25px 25px;
+}
+.details .details-h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--desaturated-dark-blue);
+    margin-bottom: 20px;
+}
+.details .details-p{
+    font-size: 1.5rem;
+    color: var(--grayish-blue);
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.user-info{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.user-info .info img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.user-info picture{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--light-grayish-blue);
+    justify-self: flex-end;
+    display: grid;
+    place-content: center;
+}
+.user-info picture img{
+    width: 18px;
+    height: 18px;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+}
+.info div{
+    margin-left: 10px;
+}
+.info .info-name{
+    color: var(--very-dark-grayish-blue);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.info .info-date{
+    color: var(--grayish-blue);
+    font-size: 1.4rem;
+}
+.attribution{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    margin: 0 auto;
+}

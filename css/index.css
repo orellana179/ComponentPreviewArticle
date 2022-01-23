@@ -72,10 +72,25 @@ article .details{
     display: grid;
     place-content: center;
 }
+.user-info picture:hover{
+    cursor: pointer;
+    background-color: var(--grayish-blue);
+}
 .user-info picture img{
     width: 18px;
     height: 18px;
 }
+#compartir{
+    display: none;
+    width: 200px;
+    height: 50px;
+    background-color: var(--very-dark-grayish-blue);
+}
+.social{
+    text-decoration: none;
+}
+
+
 .info{
     display: flex;
     flex-direction: row;

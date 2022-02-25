@@ -80,16 +80,60 @@ article .details{
     width: 18px;
     height: 18px;
 }
-#compartir{
+.share{
     display: none;
-    width: 200px;
-    height: 50px;
+    width: 320px;
+    height: 85px;
     background-color: var(--very-dark-grayish-blue);
+    border-radius: 10px;
+    position: absolute;
+    margin-top: -28px;
+    margin-left: -21px;
+    box-shadow: 1px 1px 3px 3px rgb(134, 115, 197);
+    padding: 5px;
+    gap: 10px;
+}
+.share-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.share-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(233, 220, 220);
+}
+.share-head strong{
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+.cerrar{
+    display: block;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+}
+.cerrar:hover{
+    cursor: pointer;
+    color: rgb(208, 219, 228);
 }
 .social{
     text-decoration: none;
+    display: block;
+    
 }
-
+.social img{
+    width: 40px;
+    height: 40px;
+}
+/* Class for section share */
+.active{
+    display: grid;
+    grid-template-rows: 23px 1fr;
+}
+/*  */
 
 .info{
     display: flex;
